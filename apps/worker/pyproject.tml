@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "secure-upload-worker"
+version = "0.1.0"
+description = "Background scanner worker for secure upload gateway"
+requires-python = ">=3.11"
+
+dependencies = [
+  "sqlalchemy>=2.0",
+  "psycopg2-binary",
+  "python-clamd",
+]
